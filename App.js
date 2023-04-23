@@ -7,7 +7,6 @@ import { API_KEY } from './config/env';
 
 
 export default function App() {
-  // const API_KEY = 'REDACTED_OPENAI_API_KEY';
   const apiKey = API_KEY;
 
   const [userMessages, setUserMessages] = useState([])
