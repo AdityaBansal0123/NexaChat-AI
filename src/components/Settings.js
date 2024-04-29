@@ -6,9 +6,9 @@ import { MaterialIcons, AntDesign } from '@expo/vector-icons'
 
 // URLs
 const GITHUB_URL = 'https://github.com/AdityaBansal0123/NexaChat-AI';
-const PROJECTS_URL = 'https://AdityaBansal0123.me';
+const PROJECTS_URL = 'https://github.com/AdityaBansal0123';
 
-const Settings = () => {
+const Settings = ({ navigation }) => {
   const dispatch = useDispatch();
 
   const handleDeleteConversations = () => {
@@ -69,6 +69,12 @@ const Settings = () => {
         onPress={handleDeleteKeys}
         iconName='delete'
         text='Delete all API keys'
+        IconComponent={MaterialIcons}
+      />
+      <PressableSetting 
+        onPress={() => navigation.navigate("Chat Settings")}
+        iconName='rebase-edit'
+        text='Change provider/model'
         IconComponent={MaterialIcons}
       />
       <PressableSetting 
