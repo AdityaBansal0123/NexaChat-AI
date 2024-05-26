@@ -27,6 +27,7 @@ Follow the steps below to build and run the NexaChat AI app (requires Android St
   <li>Switch between providers and models</li>
   <li>Create, browse and delete conversations</li>
   <li>Continue an earlier conversation</li>
+  <li>Filter conversations by keywords</li>
   <li>Copy a message to clipboard</li>
   <li>Share a message</li>
 </ul>
